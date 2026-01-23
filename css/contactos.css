@@ -1,0 +1,129 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.fondo-azul {
+    background-color: #003366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cuadro-blanco {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+}
+
+.titulo {
+    color: #003366;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.naranja {
+    color: #ff6600;
+}
+
+
+.menu-navegacion {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.menu-navegacion a {
+    text-decoration: none;
+    color: #003366;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.menu-navegacion a:hover {
+    color: #ff6600;
+}
+
+.boton-naranja {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-agregar {
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+}
+
+.btn-cerrar {
+    background-color: #666 !important;
+    width: auto !important;
+    padding: 5px 20px !important;
+    font-size: 0.7rem !important;
+}
+
+
+.tabla-contactos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tabla-contactos th {
+    background-color: #f8f9fa;
+    color: #003366;
+    padding: 10px;
+    border-bottom: 2px solid #ff6600;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.tabla-contactos td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+.link-ver {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.caja-texto {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.info-izquierda {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.info-izquierda hr {
+    border: 0;
+    border-top: 1px solid #eee;
+}
