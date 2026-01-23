@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas - AgendaKinal</title>
+    <link rel="stylesheet" href="../css/todo.css">
+</head>
+<body class="fondo-azul">
+
+    <div class="cuadro-blanco">
+        <nav class="menu-navegacion">
+            <a href="contactos.html">CONTACTOS</a>
+            <a href="favoritos.html">FAVORITOS</a>
+            <a href="todo.html" class="activo">TAREAS</a>
+            <a href="perfil.html">PERFIL</a>
+        </nav>
+
+        <h1 class="titulo">MIS <span class="naranja">TAREAS</span></h1>
+        
+        <div id="add-section" class="formulario-tareas">
+            <input type="text" id="taskIn" class="input-kinal" placeholder="¿Qué tienes pendiente?">
+            <select id="prioIn" class="select-kinal">
+                <option value="1">Prioridad Alta</option>
+                <option value="2">Prioridad Media</option>
+                <option value="3">Prioridad Baja</option>
+            </select>
+            <button onclick="add()" class="btn-add">AGREGAR TAREA</button>
+        </div>
+
+        <div id="edit-section" class="formulario-tareas" style="display: none;">
+            <h3 class="sub-titulo">EDITAR TAREA</h3>
+            <input type="text" id="taskEdit" class="input-kinal">
+            <div class="botones-edit">
+                <button onclick="saveEdit()" class="btn-add">GUARDAR CAMBIOS</button>
+                <button onclick="cancelEdit()" class="btn-gris">CANCELAR</button>
+            </div>
+        </div>
+
+        <div id="list" class="task-list"></div>
+    </div>
+
+    <script src="../js/todo.js"></script>
+</body>
+</html>
