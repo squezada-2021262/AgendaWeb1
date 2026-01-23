@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contactos - AgendaKinal</title>
+    <link rel="stylesheet" href="../css/contactos.css">
+</head>
+<body class="fondo-azul">
+
+    <div class="cuadro-blanco">
+        <nav class="menu-navegacion">
+            <a href="contactos.html" style="color:#ff6600;">CONTACTOS</a>
+            <a href="favoritos.html">FAVORITOS</a>
+            <a href="todo.html">TAREAS</a>
+            <a href="perfil.html">PERFIL</a>
+        </nav>
+
+        <h1 class="titulo">MIS <span class="naranja">CONTACTOS</span></h1>
+
+        <button class="boton-naranja" onclick="location.href='nuevo_contacto.html'">
+            + AGREGAR NUEVO CONTACTO
+        </button>
+
+        <table class="tabla-contactos">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Detalles</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>5555-0101</td>
+                    <td><a href="detalles.html?nombre=Juan%20Pérez&tel=5555-0101&correo=juan@kinal.edu.gt" class="link-ver">Ver</a></td>
+                </tr>
+                <tr>
+                    <td>María García</td>
+                    <td>4422-8899</td>
+                    <td><a href="detalles.html?nombre=María%20García&tel=4422-8899&correo=mgarcia@gmail.com" class="link-ver">Ver</a></td>
+                </tr>
+                <tr>
+                    <td>Carlos Rodríguez</td>
+                    <td>3311-7766</td>
+                    <td><a href="detalles.html?nombre=Carlos%20Rodríguez&tel=3311-7766&correo=carlos_ro@outlook.com" class="link-ver">Ver</a></td>
+                </tr>
+                <tr>
+                    <td>Ana López</td>
+                    <td>5959-1122</td>
+                    <td><a href="detalles.html?nombre=Ana%20López&tel=5959-1122&correo=alopez@kinal.edu.gt" class="link-ver">Ver</a></td>
+                </tr>
+                <tr>
+                    <td>Luis Morales</td>
+                    <td>2233-4455</td>
+                    <td><a href="detalles.html?nombre=Luis%20Morales&tel=2233-4455&correo=lmorales@agenda.com" class="link-ver">Ver</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <button class="boton-naranja" onclick="location.href='../index.html'" style="background-color: #666; width: auto; padding: 5px 20px; font-size: 0.7rem;">
+            CERRAR SESIÓN
+        </button>
+    </div>
+
+</body>
+</html>
