@@ -1,0 +1,51 @@
+/* --- BASE --- */
+body, html {
+    margin: 0; padding: 0; height: 100%;
+    background-color: #003366; font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.fondo-azul { display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+
+.cuadro-blanco {
+    background-color: white; padding: 2rem; border-radius: 15px;
+    width: 90%; max-width: 400px; text-align: center;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.4);
+}
+
+/* --- MENÚ --- */
+.menu-navegacion {
+    display: flex; justify-content: space-around;
+    margin-bottom: 25px; border-bottom: 2px solid #f4f4f4; padding-bottom: 12px;
+}
+.menu-navegacion a { text-decoration: none; color: #003366; font-size: 0.85rem; font-weight: bold; }
+.menu-navegacion a.activo { color: #ff6600; }
+
+.titulo { color: #003366; margin-bottom: 20px; }
+.naranja { color: #ff6600; }
+
+/* --- TARJETA DE DATOS --- */
+.tarjeta-perfil {
+    background-color: #fcfcfc;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.campo { margin-bottom: 15px; }
+.campo strong { color: #003366; font-size: 0.9rem; }
+.campo p { margin: 5px 0; color: #555; font-size: 1.1rem; word-break: break-all; }
+
+.btn-link {
+    background: none; border: none; color: #ff6600;
+    padding: 0; font-size: 0.8rem; cursor: pointer; text-decoration: underline;
+}
+
+/* --- BOTÓN SALIR --- */
+.btn-salir {
+    background-color: #666; color: white; border: none;
+    padding: 12px; width: 100%; border-radius: 5px;
+    font-weight: bold; cursor: pointer;
+}
+.btn-salir:hover { background-color: #444; }
