@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>LoginAgenda</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body class="fondo-azul">
 
@@ -16,17 +16,18 @@
 
         <form>
             <p>Correo:</p>
-            <input type="email" placeholder="tu@correo.com" class="caja-texto">
+            <input type="email" id="emailInput" placeholder="tu@correo.com" class="caja-texto">
             
             <p>Contraseña:</p>
-            <input type="password" class="caja-texto">
+            <input type="password" id="passInput" class="caja-texto">
             
-            <button type="button" class="boton-naranja" onclick="location.href=''">
+            <button type="button" class="boton-naranja" onclick="guardarYEntrar()">
                 ENTRAR
             </button>
         </form>
 
     </div>
 
+    <script src="js/index.js"></script>
 </body>
 </html>
