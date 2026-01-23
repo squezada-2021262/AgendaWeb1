@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Perfil - AgendaKinal</title>
+    <link rel="stylesheet" href="../css/perfil.css">
+</head>
+<body class="fondo-azul">
+
+    <div class="cuadro-blanco">
+        <nav class="menu-navegacion">
+            <a href="contactos.html">CONTACTOS</a>
+            <a href="favoritos.html">FAVORITOS</a>
+            <a href="todo.html">TAREAS</a>
+            <a href="perfil.html" class="activo">PERFIL</a>
+        </nav>
+
+        <h1 class="titulo">MI <span class="naranja">PERFIL</span></h1>
+        
+        <div class="perfil-card">
+            <div class="campo">
+                <strong>Correo:</strong>
+                <p id="mostrarEmail">Cargando...</p>
+            </div>
+            
+            <div class="campo">
+                <strong>Contraseña:</strong>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span id="mostrarPass">********</span>
+                    <button type="button" onclick="verClave()" class="btn-ver">Ver</button>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="salir()" class="btn-cerrar-sesion">CERRAR SESIÓN</button>
+    </div>
+
+    <script src="../js/perfil.js"></script>
+</body>
+</html>
